@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+reportlab
+pandas
+sqlalchemy
+pydantic
+python-dotenv
+python-multipart  # For file uploads like bulk CSV
