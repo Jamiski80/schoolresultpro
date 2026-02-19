@@ -1,0 +1,167 @@
+/* Professional UI: Modern, clean, responsive design with education theme (blue-green accents) */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #1a73e8; /* Google-blue inspired */
+    margin: 0;
+}
+
+h1 i {
+    margin-right: 10px;
+    color: #27ae60; /* Green accent */
+}
+
+header p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.input-section, .result-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 20px 0 10px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.course-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.course-row input {
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    color: #fff;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.add-btn {
+    background: #3498db; /* Blue */
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.calc-btn {
+    background: #27ae60; /* Green */
+    flex: 1;
+}
+
+.pdf-btn {
+    background: #e67e22; /* Orange */
+    flex: 1;
+}
+
+.clear-btn {
+    background: #e74c3c; /* Red */
+    flex: 1;
+}
+
+#result {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .course-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
