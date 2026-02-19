@@ -98,7 +98,7 @@ async function calculateGPA() {
     }
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/calculate_gpa', {
+        const response = await fetch('https://schoolresultpro-backend.onrender.com/calculate_gpa', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, courses })
@@ -151,7 +151,7 @@ async function generatePDF() {
     }
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/generate_pdf', {
+        const response = await fetch('https://schoolresultpro-backend.onrender.com/generate_pdf', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, courses })
